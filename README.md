@@ -52,3 +52,7 @@ cambios que estan listos para alojar en el repositorio
 ### repositorio
 
 area donde se almacenan los cambios de forma permanente
+
+## .gitignore
+
+contiene los archivos a los que git no les hara seguimiento
