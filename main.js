@@ -1,1 +1,2 @@
-console.log('Curso Git CodigoFacilito!')
+console.log('Hola Mundo!')
+console.log('Curso de Git')
