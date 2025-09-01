@@ -56,3 +56,26 @@ area donde se almacenan los cambios de forma permanente
 ## .gitignore
 
 contiene los archivos a los que git no les hara seguimiento
+
+## Workflow de git
+
+- nombramiento de ramas
+- nombramiento de commits
+- creacion de ramas
+- merge de ramas
+
+### future based
+
+se crea una nueva rama para cada cambio realizado o implementado
+
+### gitflow
+
+se utilizan 2 ramas principales (main y develop)
+
+- a partir de la rama develop se crean ramas `feature` y se funcionan con la rama develop
+- a partir de la rama develop se crean ramas `release` y se funcionan con la rama main
+- a partir de la rama main se crean ramas `hotfix` y se funcionan con la rama develop y main
+
+### trunk based
+
+se utiliza una unica rama principal (iteracion y entrega continua)
