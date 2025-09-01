@@ -108,3 +108,16 @@ git revert <SHA>
 git reset --soft HEAD~1 # deshace los cambios realizados en el ultimo commit (los cambios realizados en el commit se mantienen en el area de staging)
 git reset HEAD~1 # deshace los cambios realizados en el ultimo commit (los cambios realizados en el commit se mantienen en el area de trabajo)
 git reset --hard HEAD~1 # deshace los cambios realizados en el ultimo commit (los cambios realizados en el commit son descartados)
+
+###########################
+# MANIPULANDO LA HISTORIA #
+###########################
+
+# actualizar la historia de una rama
+git rebase main # desde la rama develop se realiza el rebase para que esta se actualice con los ultimos cambios realizados en la rama main
+
+# modificar el mensaje del ultimo commit o agregar los cambios que se encuentren en el staging area al ultimo commit que se haya realizado
+git commit --amend
+
+# copiar los cambios realizados en el commit de una rama en otra rama distinta
+git cherry-pick <SHA>
