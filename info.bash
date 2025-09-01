@@ -93,3 +93,13 @@ git stash pop stash@{1} # se restauran los cambios guardados en el stash con el 
 
 # almacenar los cambios en el stash incluyendo los archivos a los cuales git aun no les esta haciendo seguimiento
 git stash --include-untracked
+
+#######################
+# DESHACIENDO CAMBIOS #
+#######################
+
+# deshacer los cambios realizados en un archivo que se encuentre en el area de trabajo
+git checkout <file_name>
+
+# deshacer los cambios realizados en un commit, pero sin eliminar el commit de la historia (los cambios revertidos se van a referenciar en un nuevo commit)
+git revert <SHA>
