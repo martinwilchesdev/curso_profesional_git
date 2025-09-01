@@ -1,3 +1,1 @@
-function suma() {
-    return 2 + 2
-}
+console.log('Hola Mundo')
