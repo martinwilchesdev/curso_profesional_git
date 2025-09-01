@@ -103,3 +103,8 @@ git checkout <file_name>
 
 # deshacer los cambios realizados en un commit, pero sin eliminar el commit de la historia (los cambios revertidos se van a referenciar en un nuevo commit)
 git revert <SHA>
+
+# deshacer los cambios realizados en un commit
+git reset --soft HEAD~1 # deshace los cambios realizados en el ultimo commit (los cambios realizados en el commit se mantienen en el area de staging)
+git reset HEAD~1 # deshace los cambios realizados en el ultimo commit (los cambios realizados en el commit se mantienen en el area de trabajo)
+git reset --hard HEAD~1 # deshace los cambios realizados en el ultimo commit (los cambios realizados en el commit son descartados)
