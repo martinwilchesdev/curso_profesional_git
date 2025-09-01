@@ -1,2 +1,3 @@
-console.log('Hola Mundo!')
-console.log('Curso de Git modificado')
+function suma() {
+    return 2 + 2
+}
